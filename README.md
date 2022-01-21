@@ -12,6 +12,6 @@ with weight 1. When a correct answer is given, the weight is halved. When an inc
 factor, which is determined by the lexicographic similarity (Levenshtein distance) between the correct answer and the provided answer. The similarity
 is determined by the number of operations necessary to transform the answer into a correct one, where an operation is defined as the insertion, deletion, or
 alteration of a character. The proportion of operations to the length of the correct answer determines the factor by which the weight will increase, which will
-be between 1 (non-inclusive) and 2. For example, if the given card is "United Kingdom" and the response is "Londn", the weight will increase by a smaller ammount
+be between 1 (non-inclusive) and 2. For example, if the given card is "United Kingdom" and the response is "Londn", the weight will increase by a smaller amount
 (x1.16666) than if the response was "Paris" (x2.0).
 
