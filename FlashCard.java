@@ -36,7 +36,7 @@ public class FlashCard {
 	 * the answer and the capital, divided by the maximum of the 
 	 * input string and the capital with the lowest distance  
 	 * */
-	private double get_k_score(String answer){
+	private double get_correctness_score(String answer){
 		int min_dist = Integer.MAX_VALUE;
 		String matching_capital = null;
 		for (String capital: this.capitals){
@@ -74,8 +74,8 @@ public class FlashCard {
 		if (this.isCapital(answer)){
 			this.weight *= 0.5;
 		} else {
-			double keenan_score = this.get_k_score(answer);
-			this.weight = Double.min(this.weight*(1+keenan_score), 10.0);
+			double correctness_score = this.get_correctness_score(answer);
+			this.weight = Double.min(this.weight*(1+correctness_score), 10.0);
 		}
 		return this.weight;
 	}
