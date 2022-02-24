@@ -15,7 +15,7 @@ import flashCardPackage.FlashCard;
 
 /* ********************************************** *
  * Flashcard deck manages flashcards and provides *
- * sampling logic 	`							  *
+ * sampling logic				  *
  * ********************************************** */
  
 
