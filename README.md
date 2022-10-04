@@ -1,7 +1,6 @@
 # WeightedFlashCard
 This application simulates a shuffled flashcard deck study technique, with the added benefit of weighting selection based on previous answers. 
-Therefore cards that frequently elicit incorrect responses will be more likely to be selected in the future than thoes that receive erroneous answers
-comparatively less. In the example provided countries are randomly selected from a deck and the user must respond with the correct capital from a defined
+Therefore cards that frequently elicit incorrect responses will be more likely to be selected in the future than thoes that receive erroneous answers less. In the example provided, countries are randomly selected from a deck and the user must respond with the correct capital from a defined
 set of acceptable answers. Following a provided answer, the new weight of that card will be presented, as well as the correct answer should the given
 response be incorrect. Card's weights are saved to disk, and therefore persist throughout subsequent iterations of the game. Should you desire to 
 reset all the weights, you may run the RESET.sh script.
